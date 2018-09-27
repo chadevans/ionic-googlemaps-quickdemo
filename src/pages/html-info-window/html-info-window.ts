@@ -58,7 +58,8 @@ export class HtmlInfoWindowPage {
     let marker: Marker = this.map.addMarkerSync({
       position: {lat: 35.685208, lng: -121.168225},
       draggable: true,
-      disableAutoPan: true
+      disableAutoPan: true,
+      icon: "./assets/imgs/Number-1-icon.png"
     });
 
     marker.on(GoogleMapsEvent.MARKER_CLICK).subscribe(() => {
